@@ -8,11 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://trustypangolin.github.io/obs-comp/youtube-setup/">
+        <link rel="canonical" href="https://trustypangolin.github.io/obs-comp/obs-profile-setup/">
       
       
-        <link rel="prev" href="..">
+        <link rel="prev" href="../youtube-studio-setup/">
       
+      
+        <link rel="next" href="../obs-scene-collection/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -20,7 +22,7 @@
     
     
       
-        <title>FB Competition OBS Streaming Setup - FB OBS Comp Setup</title>
+        <title>OBS Profile - Fortitude Barbell Competition OBS Setup</title>
       
     
     
@@ -62,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#fb-competition-obs-streaming-setup" class="md-skip">
+        <a href="#configuring-obs-for-4k" class="md-skip">
           Skip to content
         </a>
       
@@ -76,9 +78,9 @@
 
   
 
-<header class="md-header md-header--shadow" data-md-component="header">
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="FB OBS Comp Setup" class="md-header__button md-logo" aria-label="FB OBS Comp Setup" data-md-component="logo">
+    <a href=".." title="Fortitude Barbell Competition OBS Setup" class="md-header__button md-logo" aria-label="Fortitude Barbell Competition OBS Setup" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -92,13 +94,13 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            FB OBS Comp Setup
+            Fortitude Barbell Competition OBS Setup
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              FB Competition OBS Streaming Setup
+              OBS Profile
             
           </span>
         </div>
@@ -153,13 +155,101 @@
     
   </nav>
   
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Software
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../youtube-studio-setup/" class="md-tabs__link">
+          
+  
+  
+  4K Youtube Streaming
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../obs-scene-collection/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Scene Collection
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../obs-scene-config/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Scene Config
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
 </header>
     
     <div class="md-container" data-md-component="container">
       
       
-        
-          
         
       
       <main class="md-main" data-md-component="main">
@@ -173,16 +263,20 @@
                     
 
 
+  
 
-<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="FB OBS Comp Setup" class="md-nav__button md-logo" aria-label="FB OBS Comp Setup" data-md-component="logo">
+    <a href=".." title="Fortitude Barbell Competition OBS Setup" class="md-nav__button md-logo" aria-label="Fortitude Barbell Competition OBS Setup" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
-    FB OBS Comp Setup
+    Fortitude Barbell Competition OBS Setup
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -199,7 +293,7 @@
   
   
   <span class="md-ellipsis">
-    Fortitude Barbell
+    Software
     
   </span>
   
@@ -217,12 +311,81 @@
   
   
   
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    4K Youtube Streaming
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            4K Youtube Streaming
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../youtube-studio-setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Youtube
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
     <li class="md-nav__item md-nav__item--active">
       
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
-      
-        
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
@@ -230,7 +393,7 @@
   
   
   <span class="md-ellipsis">
-    FB Competition OBS Streaming Setup
+    OBS Profile
     
   </span>
   
@@ -243,7 +406,7 @@
   
   
   <span class="md-ellipsis">
-    FB Competition OBS Streaming Setup
+    OBS Profile
     
   </span>
   
@@ -256,8 +419,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -266,79 +427,19 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#4k-youtube-settings" class="md-nav__link">
+  <a href="#configuring-obs-for-4k" class="md-nav__link">
     <span class="md-ellipsis">
-      4K YouTube Settings
+      Configuring OBS for 4K
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="4K YouTube Settings">
+    <nav class="md-nav" aria-label="Configuring OBS for 4K">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#internet-speed" class="md-nav__link">
+  <a href="#profile-settings" class="md-nav__link">
     <span class="md-ellipsis">
-      Internet Speed
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#youtube-studio" class="md-nav__link">
-    <span class="md-ellipsis">
-      YouTube Studio
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#youtube-streaming-key" class="md-nav__link">
-    <span class="md-ellipsis">
-      YouTube Streaming Key
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#existing-4k-key" class="md-nav__link">
-    <span class="md-ellipsis">
-      Existing 4K Key
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#creating-a-new-key-if-needed" class="md-nav__link">
-    <span class="md-ellipsis">
-      Creating a New Key (If Needed)
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4k-obs-settings" class="md-nav__link">
-    <span class="md-ellipsis">
-      4K OBS Settings
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="4K OBS Settings">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#obs-profile-settings" class="md-nav__link">
-    <span class="md-ellipsis">
-      OBS Profile Settings
+      Profile Settings
     </span>
   </a>
   
@@ -392,6 +493,58 @@
     </li>
   
 
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../obs-scene-collection/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Scene Collection
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../obs-scene-config/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Scene Config
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
     
   </ul>
 </nav>
@@ -399,152 +552,6 @@
                 </div>
               </div>
             
-            
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#4k-youtube-settings" class="md-nav__link">
-    <span class="md-ellipsis">
-      4K YouTube Settings
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="4K YouTube Settings">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#internet-speed" class="md-nav__link">
-    <span class="md-ellipsis">
-      Internet Speed
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#youtube-studio" class="md-nav__link">
-    <span class="md-ellipsis">
-      YouTube Studio
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#youtube-streaming-key" class="md-nav__link">
-    <span class="md-ellipsis">
-      YouTube Streaming Key
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#existing-4k-key" class="md-nav__link">
-    <span class="md-ellipsis">
-      Existing 4K Key
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#creating-a-new-key-if-needed" class="md-nav__link">
-    <span class="md-ellipsis">
-      Creating a New Key (If Needed)
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4k-obs-settings" class="md-nav__link">
-    <span class="md-ellipsis">
-      4K OBS Settings
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="4K OBS Settings">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#obs-profile-settings" class="md-nav__link">
-    <span class="md-ellipsis">
-      OBS Profile Settings
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#stream-settings" class="md-nav__link">
-    <span class="md-ellipsis">
-      Stream Settings
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#output-settings" class="md-nav__link">
-    <span class="md-ellipsis">
-      Output Settings
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#audio-settings" class="md-nav__link">
-    <span class="md-ellipsis">
-      Audio Settings
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#obs-canvas" class="md-nav__link">
-    <span class="md-ellipsis">
-      OBS Canvas
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-                  </div>
-                </div>
-              </div>
             
           
           
@@ -555,78 +562,47 @@
 
 
 
-<h1 id="fb-competition-obs-streaming-setup">FB Competition OBS Streaming Setup</h1>
-<h2 id="4k-youtube-settings">4K YouTube Settings</h2>
-<h3 id="internet-speed">Internet Speed</h3>
-<p>Ensure there is enough upload bandwidth to use 4K streaming.<br />
-Minimum Upload Speed for 4K Streaming is &gt;=30 Mbps  </p>
-<p><img alt="Upload Speed Screenshot" src="artifacts/image1.png" />{ width="3.97in", height="1.64in" }<br />
-<a href="https://www.speedtest.net/">https://www.speedtest.net/</a></p>
-<hr />
-<h3 id="youtube-studio">YouTube Studio</h3>
-<ul>
-<li>Logged in as Fortitude Barbell  </li>
-<li><strong>Preferred: A channel manager with your own Gmail account</strong>  </li>
-<li>YouTube Channel Settings to add a Manager Role  </li>
-</ul>
-<p><img alt="YouTube 4K (2160p) Streaming Key" src="artifacts/image2.png" />{ width="2.29in", height="1.46in" }<br />
-<img alt="Phone screenshot" src="artifacts/image3.png" />{ width="1.08in", height="1.45in" }</p>
-<hr />
-<h3 id="youtube-streaming-key">YouTube Streaming Key</h3>
-<p>YouTube requires a 4K enabled Streaming Key  </p>
-<ul>
-<li><a href="https://studio.youtube.com">https://studio.youtube.com</a>  </li>
-<li>Click <em>Create → Go Live</em>  </li>
-</ul>
-<p><img alt="Streaming Key setup" src="artifacts/image4.png" />{ width="4.06in", height="0.95in" }</p>
-<hr />
-<h3 id="existing-4k-key">Existing 4K Key</h3>
-<p>There should be a key already available that allows 4K (2160p) resolution and up to 60 Frames per second  </p>
-<ul>
-<li>Copy the Stream Key for OBS  </li>
-</ul>
-<p><img alt="4K Key available" src="artifacts/image5.png" />{ width="4.08in", height="1.77in" }</p>
-<hr />
-<h3 id="creating-a-new-key-if-needed">Creating a New Key (If Needed)</h3>
-<p><strong><em>ONLY</em> If the key is <em>NOT</em> available perform this step</strong>  </p>
-<ul>
-<li>Create a new key with manual settings and enable 2160p  </li>
-</ul>
-<p><img alt="New key creation" src="artifacts/image6.png" />{ width="1.77in", height="1.95in" }</p>
-<hr />
-<h2 id="4k-obs-settings">4K OBS Settings</h2>
-<h3 id="obs-profile-settings">OBS Profile Settings</h3>
+  <h1>OBS Profile</h1>
+
+<h2 id="configuring-obs-for-4k">Configuring OBS for 4K</h2>
+<h3 id="profile-settings">Profile Settings</h3>
 <p>All the settings below will be stored as a <strong><em>Profile</em></strong>.  </p>
+<ul>
+<li>
 <p>Always create a new profile, so that existing stream profile settings are not lost  </p>
+</li>
+<li>
 <p><em>Profiles </em><em>do not store</em><em> the Scenes or Sources</em>; these are stored under <em>Scene Collection</em>  </p>
+</li>
+</ul>
 <p><strong>OBS Profiles can be Exported and Imported</strong>  </p>
-<p><img alt="Profile settings" src="artifacts/image7.png" />{ width="4.07in", height="2.48in" }</p>
+<p><img alt="Profile settings" src="../artifacts/obs-profile.png" /></p>
 <hr />
 <h3 id="stream-settings">Stream Settings</h3>
 <ul>
-<li>OBS Settings MUST use a stream key for 4K  </li>
+<li>OBS Settings MUST use a <a href="../youtube-studio-setup/#existing-4k-api-key">stream key for 4K</a>  </li>
 <li>Connect Account option will NOT use a custom 4K Stream Key  </li>
 </ul>
-<p><img alt="Stream settings" src="artifacts/image8.png" />{ width="4.08in", height="2.69in" }</p>
+<p><img alt="Stream settings" src="../artifacts/obs-streamkey.png" /></p>
 <hr />
 <h3 id="output-settings">Output Settings</h3>
 <p>Output settings will greatly depend on hardware CPU + GPU, these are the <em>minimum</em> settings  </p>
 <ul>
 <li>Output Mode <strong>Advanced</strong>  </li>
 <li>Audio Track - <strong>1</strong>  </li>
-<li><strong>H.264</strong> or <strong>H.265</strong> (<strong>Hardware</strong>)  </li>
+<li><strong>H.264</strong> or <strong>H.265</strong> (<strong>Hardware</strong> Required, maybe AMD or Nvidia, or even Intel)  </li>
 <li>Bitrate -- <strong>20000 Kbps</strong>  </li>
 <li>Preset -- <strong>Balanced</strong>  </li>
 </ul>
 <p>4K is not possible on old hardware.  </p>
-<p><img alt="Output settings" src="artifacts/image9.png" />{ width="4.08in", height="2.76in" }</p>
+<p><img alt="Output settings" src="../artifacts/obs-output-settings.png" /></p>
 <hr />
 <h3 id="audio-settings">Audio Settings</h3>
 <p>Default must be changed to a <em>lower</em> value for <strong>Track 1</strong> to match YouTube recommendations  </p>
 <ul>
 <li>Audio Bitrate - <strong>128</strong>  </li>
 </ul>
-<p><img alt="Audio settings" src="artifacts/image10.png" />{ width="4.07in", height="0.98in" }</p>
+<p><img alt="Audio settings" src="../artifacts/obs-output-audio-settings.png" /></p>
 <hr />
 <h3 id="obs-canvas">OBS Canvas</h3>
 <p>Set both<br />
@@ -635,8 +611,8 @@ Minimum Upload Speed for 4K Streaming is &gt;=30 Mbps  </p>
 <p>to <strong>3840x2160</strong> (4K/2160p) resolution.  </p>
 <p>It can be <strong>manually typed in</strong> if the dropdown box does not show it (Which will be due to physical monitor resolution limitations)  </p>
 <p><strong>FPS will be determined by Hardware</strong>, 60 is only possible if the hardware is capable  </p>
-<p><img alt="Canvas settings" src="artifacts/image11.png" />{ width="4.07in", height="1.24in" }<br />
-<img alt="Output resolution" src="artifacts/image12.png" />{ width="4.05in", height="3.94in" }</p>
+<p><img alt="Canvas settings" src="../artifacts/obs-canvas.png" />
+<img alt="Output resolution" src="../artifacts/obs-preview.png" /></p>
 
 
 
@@ -685,7 +661,7 @@ Minimum Upload Speed for 4K Streaming is &gt;=30 Mbps  </p>
     
     
       
-      <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.sections", "navigation.expand", "navigation.path", "toc.integrate"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../assets/javascripts/bundle.13a4f30d.min.js"></script>
