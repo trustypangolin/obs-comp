@@ -165,7 +165,26 @@
   
   
     <li class="md-tabs__item">
-      <a href=".." class="md-tabs__link">
+      <a href="../hardware/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Hardware
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../software/" class="md-tabs__link">
         
   
   
@@ -286,7 +305,29 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../hardware/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Hardware
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../software/" class="md-nav__link">
         
   
   
@@ -323,10 +364,10 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
   
@@ -339,8 +380,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             4K Youtube Streaming
           </label>
@@ -494,9 +535,27 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#scene" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scene
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#sources" class="md-nav__link">
     <span class="md-ellipsis">
       Sources
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#audio-mixer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Audio Mixer
     </span>
   </a>
   
@@ -518,6 +577,24 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#scene_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scene
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#groups" class="md-nav__link">
+    <span class="md-ellipsis">
+      Groups
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#sources_1" class="md-nav__link">
     <span class="md-ellipsis">
       Sources
@@ -527,27 +604,27 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#source-groups" class="md-nav__link">
+  <a href="#transforms" class="md-nav__link">
     <span class="md-ellipsis">
-      Source Groups
+      Transforms
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#source-transforms" class="md-nav__link">
+  <a href="#filters" class="md-nav__link">
     <span class="md-ellipsis">
-      Source Transforms
+      Filters
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#source-filters" class="md-nav__link">
+  <a href="#transitions" class="md-nav__link">
     <span class="md-ellipsis">
-      Source Filters
+      Transitions
     </span>
   </a>
   
@@ -604,6 +681,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#slapcam-transitions" class="md-nav__link">
+    <span class="md-ellipsis">
+      SlapCam Transitions
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -650,6 +736,15 @@
   <a href="#commentator-filters" class="md-nav__link">
     <span class="md-ellipsis">
       Commentator Filters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#commentator-transitions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Commentator Transitions
     </span>
   </a>
   
@@ -706,6 +801,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#roaming-transitions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Roaming Transitions
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -757,6 +861,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#crowd-transitions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Crowd Transitions
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -795,42 +908,167 @@
 
 <h2 id="scenes-configuration">Scenes Configuration</h2>
 <h3 id="starting-soon-scene">Starting Soon Scene</h3>
-<h4 id="sources">Sources</h4>
 <p>Purpose:</p>
-<pre><code>Pre-competition video reel showing sponsors
-
-Copyright-free background music
-</code></pre>
-<p>Setup:</p>
-<pre><code>Create new scene: Starting Soon
-
-Add sources:
-
-    Browser Source: YouTube countdown
-    URL: https://www.youtube.com/watch?v=hbK5C_DxiKk
-
-    Media Source: Sponsor reel video
-    Path: OneDrive/FortitudeBarbell/Streaming-Release/2160p-4K/Videos/Sponsor-Video-Reel.mov
-    (Enable loop option)
-</code></pre>
-<p><img alt="Starting Soon Setup" src="../artifacts/scenes/sources-order-starting-soon.png" />
-<img alt="Media Source" src="../artifacts/scenes/sponsors-media.png" /></p>
-<p>Audio Check:</p>
-<pre><code>Ensure output is not muted
-Adjust volume via OBS mixer
-</code></pre>
+<ul>
+<li>Pre-competition video reel showing sponsors</li>
+<li>Copyright-free background music</li>
+</ul>
+<h4 id="scene">Scene</h4>
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+</style>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><div style="width:500px">Step</div></th>
+<th style="text-align: center;">OBS ScreenShot</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Scene <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg></span> <img alt="➕" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2795.svg" title=":heavy_plus_sign:" /> (Add Scene)</td>
+<td style="text-align: center;"><img alt="" src="../artifacts/scenes/new-scene.png" /></td>
+</tr>
+<tr>
+<td style="text-align: left;">Name the Scene <br><b>Starting Soon</b></td>
+<td style="text-align: center;"><img alt="" src="../artifacts/scenes/starting-soon/ss-scene-name.png" /></td>
+</tr>
+</tbody>
+</table>
+<h4 id="sources">Sources</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><div style="width:500px">Step</div></th>
+<th style="text-align: center;">OBS Screenshot</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Sources <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg></span> <img alt="➕" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2795.svg" title=":heavy_plus_sign:" />  (Add Source)</td>
+<td style="text-align: center;"><img alt="" src="../artifacts/scenes/new-sources.png" /></td>
+</tr>
+<tr>
+<td style="text-align: left;">Browser Source</td>
+<td style="text-align: center;"><img alt="" src="../artifacts/scenes/sources-new-browser.png" /></td>
+</tr>
+<tr>
+<td style="text-align: left;">Name the Source <br><b>Youtube-NCS  </b></td>
+<td style="text-align: center;"><img alt="" src="../artifacts/scenes/starting-soon/ss-name-source1.png" /></td>
+</tr>
+<tr>
+<td style="text-align: left;">Browser Properties <br>URL: <a href="https://www.youtube.com/watch?v=hbK5C_DxiKk">https://www.youtube.com/watch?v=hbK5C_DxiKk</a> <br><img alt="✔" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2714.svg" title=":heavy_check_mark:" /> Control audio via OBS</td>
+<td style="text-align: center;"><img alt="" src="../artifacts/scenes/starting-soon/ss-youtube-source.png" /></td>
+</tr>
+<tr>
+<td style="text-align: left;">Sources <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg></span> <img alt="➕" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2795.svg" title=":heavy_plus_sign:" />  (Add Source)</td>
+<td style="text-align: center;"><img alt="" src="../artifacts/scenes/starting-soon/ss-add-source2.png" /></td>
+</tr>
+<tr>
+<td style="text-align: left;">Media Source</td>
+<td style="text-align: center;"><img alt="" src="../artifacts/scenes/sources-new-media-source.png" /></td>
+</tr>
+<tr>
+<td style="text-align: left;">Name the Source <br><b>Sponsors Reel</b></td>
+<td style="text-align: center;"><img alt="" src="../artifacts/scenes/starting-soon/ss-name-source2.png" /></td>
+</tr>
+<tr>
+<td style="text-align: left;">Path: OneDrive/FortitudeBarbell/Streaming-Release/2160p-4K/Videos/Sponsor-Video-Reel.mov</td>
+<td style="text-align: center;"><img alt="" src="../artifacts/scenes/starting-soon/ss-sponsors-media.png" /></td>
+</tr>
+<tr>
+<td style="text-align: left;">Media Properties <br><img alt="✔" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2714.svg" title=":heavy_check_mark:" /> Enable loop option<br><img alt="✔" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2714.svg" title=":heavy_check_mark:" /> Use hardware decoding when available</td>
+<td style="text-align: center;"><img alt="" src="../artifacts/scenes/starting-soon/ss-source2-properties.png" /></td>
+</tr>
+<tr>
+<td style="text-align: left;">Completed Sources List and Ordering</td>
+<td style="text-align: center;"><img alt="" src="../artifacts/scenes/starting-soon/ss-sources-order.png" /></td>
+</tr>
+</tbody>
+</table>
+<h4 id="audio-mixer">Audio Mixer</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><div style="width:500px">Step</div></th>
+<th style="text-align: center;">OBS Screenshot</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Audio Mixer Config Option</td>
+<td style="text-align: center;"><img alt="" src="../artifacts/scenes/starting-soon/ss-audio-mixer-1.png" /></td>
+</tr>
+<tr>
+<td style="text-align: left;">Configure to desired settings</td>
+<td style="text-align: center;"><img alt="" src="../artifacts/scenes/starting-soon/ss-audio-options.png" /></td>
+</tr>
+</tbody>
+</table>
 <h3 id="main-platform-scene">Main Platform Scene</h3>
 <p>Purpose:</p>
-<pre><code>Primary competition view with:
+<ul>
+<li>Platform camera</li>
+<li>Competitor stats</li>
+<li>Sponsor logos</li>
+</ul>
+<h4 id="scene_1">Scene</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><div style="width:500px">Step</div></th>
+<th style="text-align: center;">OBS ScreenShot</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Scene <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg></span> <img alt="➕" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2795.svg" title=":heavy_plus_sign:" /> (Add Scene)</td>
+<td style="text-align: center;"><img alt="" src="../artifacts/scenes/new-scene.png" /></td>
+</tr>
+<tr>
+<td style="text-align: left;">Name the Scene <br><b>Main Platform</b></td>
+<td style="text-align: center;"><img alt="" src="../artifacts/scenes/main-platform/mp-scene-name.png" /></td>
+</tr>
+</tbody>
+</table>
+<h4 id="groups">Groups</h4>
+<ul>
+<li>Begin by creating all the groups required</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><div style="width:500px">Step</div></th>
+<th style="text-align: center;">OBS Screenshot</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Sources <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg></span> <img alt="➕" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2795.svg" title=":heavy_plus_sign:" />  (Add Source)</td>
+<td style="text-align: center;"><img alt="" src="../artifacts/scenes/new-sources.png" /></td>
+</tr>
+<tr>
+<td style="text-align: left;">Create Groups</td>
+<td style="text-align: center;"><img alt="" src="../artifacts/scenes/sources-new-group.png" /></td>
+</tr>
+<tr>
+<td style="text-align: left;">Create the following Groups in order <b><br><ul>  <li>Test Patterns</li><li>Main Platform Video</li><li>LiftingCast-PlatformR</li><li>LiftingCast-PlatformL</li><li>SponsorsBottomLeft</li><li>SponsorsTopLeft</li></ul></b><br>Note: these will appear in <em>reverse</em> order</td>
+<td style="text-align: center;"><img alt="" src="../artifacts/scenes/general-group-name.png" /></td>
+</tr>
+<tr>
+<td style="text-align: left;">Completed Sources <em>Group</em> List and Ordering</td>
+<td style="text-align: center;"><img alt="" src="../artifacts/scenes/main-platform/mp-group-list.png" /></td>
+</tr>
+</tbody>
+</table>
+<ul>  <li>First item</li><li>Second item</li><li>Third item</li><li>Fourth item</li><li>Fourth item</li><li>Fourth item</li></ul>
 
-    Platform camera
-    Competitor stats
-    Sponsor logos
-</code></pre>
 <h4 id="sources_1">Sources</h4>
-<h4 id="source-groups">Source Groups</h4>
-<h4 id="source-transforms">Source Transforms</h4>
-<h4 id="source-filters">Source Filters</h4>
+<h4 id="transforms">Transforms</h4>
+<h4 id="filters">Filters</h4>
+<h4 id="transitions">Transitions</h4>
 <p>Setup:</p>
 <pre><code>Background
 
@@ -849,7 +1087,7 @@ text
 </code></pre>
 <p>Component   Details Image Reference
 Test Patterns   Test-Pattern-4K.png + Test-Image-4K.png <img alt="Test Patterns" src="../artifacts/scenes/mainplatform-sources-typical-elements.png" />
-Platform Camera USB/Hollyland device (3840×2160)    <img alt="Camera Setup" src="../artifacts/scenes/main-platform-scene.png" />
+Platform Camera USB/Hollyland device (3840×2160)    <img alt="Camera Setup" src="artifacts/scenes/main-platform-scene.png" />
 LiftingCast Stats   https://liftingcast.com/meets/<ID>/liveFeed/version3    <img alt="Stats" src="../artifacts/scenes/mainplatform-sources-typical.png" />
 LiftingCast Lights  https://liftingcast.com/meets/<ID>/liveFeed/version1    <img alt="Lights" src="../artifacts/scenes/mainplatform-sources-dual.png" /></p>
 <pre><code>Filters:
@@ -862,12 +1100,12 @@ LiftingCast Lights  https://liftingcast.com/meets/<ID>/liveFeed/version1    <img
 
         Lights: Left 242px, Right 3421px
 </code></pre>
-<p><img alt="Filter Settings" src="../artifacts/scenes/audio-options.png" /></p>
+<p><img alt="Filter Settings" src="artifacts/scenes/audio-options.png" /></p>
 <pre><code>Transitions:
 
     Apply swipe animations (Left for Show, Right for Hide)
 </code></pre>
-<p><img alt="Transition Settings" src="../artifacts/scenes/add-sponsors-reel.png" /></p>
+<p><img alt="Transition Settings" src="artifacts/scenes/add-sponsors-reel.png" /></p>
 <h3 id="alternate-slapcam">Alternate - SlapCam</h3>
 <h4 id="slapcam-sources">SlapCam Sources</h4>
 <h4 id="slapcam-groups">SlapCam Groups</h4>
@@ -883,6 +1121,8 @@ LiftingCast Lights  https://liftingcast.com/meets/<ID>/liveFeed/version1    <img
 </ul>
 <h4 id="slapcam-transforms">SlapCam Transforms</h4>
 <h4 id="slapcam-filters">SlapCam Filters</h4>
+<h4 id="slapcam-transitions">SlapCam Transitions</h4>
+<hr />
 <h3 id="alternate-commentator">Alternate - Commentator</h3>
 <h4 id="commentator-sources">Commentator Sources</h4>
 <h4 id="commentator-groups">Commentator Groups</h4>
@@ -898,6 +1138,8 @@ LiftingCast Lights  https://liftingcast.com/meets/<ID>/liveFeed/version1    <img
 </ul>
 <h4 id="commentator-transforms">Commentator Transforms</h4>
 <h4 id="commentator-filters">Commentator Filters</h4>
+<h4 id="commentator-transitions">Commentator Transitions</h4>
+<hr />
 <h3 id="alternate-roaming">Alternate - Roaming</h3>
 <h4 id="roaming-sources">Roaming Sources</h4>
 <h4 id="roaming-groups">Roaming Groups</h4>
@@ -913,6 +1155,8 @@ LiftingCast Lights  https://liftingcast.com/meets/<ID>/liveFeed/version1    <img
 </ul>
 <h4 id="roaming-transforms">Roaming Transforms</h4>
 <h4 id="roaming-filters">Roaming Filters</h4>
+<h4 id="roaming-transitions">Roaming Transitions</h4>
+<hr />
 <h3 id="alternate-crowd">Alternate - Crowd</h3>
 <h4 id="crowd-sources">Crowd Sources</h4>
 <h4 id="crowd-groups">Crowd Groups</h4>
@@ -928,6 +1172,7 @@ LiftingCast Lights  https://liftingcast.com/meets/<ID>/liveFeed/version1    <img
 </ul>
 <h4 id="crowd-transforms">Crowd Transforms</h4>
 <h4 id="crowd-filters">Crowd Filters</h4>
+<h4 id="crowd-transitions">Crowd Transitions</h4>
 
 
 
