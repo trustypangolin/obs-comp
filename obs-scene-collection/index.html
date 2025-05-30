@@ -497,6 +497,8 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
@@ -529,6 +531,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -537,16 +541,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#what-is-an-obs-scene-collection" class="md-nav__link">
-    <span class="md-ellipsis">
-      What is an OBS Scene Collection?
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="What is an OBS Scene Collection?">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#what-are-scenes" class="md-nav__link">
     <span class="md-ellipsis">
       What are Scenes?
@@ -554,11 +548,39 @@
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#what-are-sources" class="md-nav__link">
     <span class="md-ellipsis">
       What are Sources?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-groups" class="md-nav__link">
+    <span class="md-ellipsis">
+      What are Groups?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-transforms" class="md-nav__link">
+    <span class="md-ellipsis">
+      What are Transforms?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="What are Transforms?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#positional-alignments" class="md-nav__link">
+    <span class="md-ellipsis">
+      Positional Alignments
     </span>
   </a>
   
@@ -570,18 +592,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#import-an-existing-scene-collection" class="md-nav__link">
+  <a href="#what-are-filters" class="md-nav__link">
     <span class="md-ellipsis">
-      Import an Existing Scene Collection
+      What are Filters?
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#create-a-new-scene-collection" class="md-nav__link">
+  <a href="#what-are-transitions" class="md-nav__link">
     <span class="md-ellipsis">
-      Create a New Scene Collection
+      What are Transitions?
     </span>
   </a>
   
@@ -801,16 +823,14 @@
 
 
 
-  <h1>Scene Collection</h1>
-
-<h2 id="what-is-an-obs-scene-collection">What is an OBS Scene Collection?<a class="headerlink" href="#what-is-an-obs-scene-collection" title="Permanent link">&para;</a></h2>
+<h1 id="what-is-an-obs-scene-collection">What is an OBS Scene Collection?<a class="headerlink" href="#what-is-an-obs-scene-collection" title="Permanent link">&para;</a></h1>
 <p>Scene Collections handle the various overlays, artifacts, and logos that appear on screen. They can be:</p>
 <ul>
 <li>Imported/exported between computers</li>
 <li>Created from scratch</li>
 </ul>
 <p>This guide covers both methods.</p>
-<h3 id="what-are-scenes">What are Scenes?<a class="headerlink" href="#what-are-scenes" title="Permanent link">&para;</a></h3>
+<h2 id="what-are-scenes">What are Scenes?<a class="headerlink" href="#what-are-scenes" title="Permanent link">&para;</a></h2>
 <p>In OBS, a "scene" is a collection of sources such as </p>
 <ul>
 <li>video feeds</li>
@@ -824,7 +844,7 @@
 <p>Below is an typical completed scene setup, showing all the scenes used for a typical competition stream:</p>
 <p><img alt="Example of all scenes used" src="../artifacts/scenes/scenes-complete.png" /></p>
 <hr />
-<h3 id="what-are-sources">What are Sources?<a class="headerlink" href="#what-are-sources" title="Permanent link">&para;</a></h3>
+<h2 id="what-are-sources">What are Sources?<a class="headerlink" href="#what-are-sources" title="Permanent link">&para;</a></h2>
 <p>In OBS, a "source" is any input that you add to a scene such as</p>
 <ul>
 <li>a video capture device</li>
@@ -837,23 +857,100 @@
 <p>Below is an example showing the typical sources used in the main competition platform scene:</p>
 <p><img alt="Example of typical sources in a main platform scene" src="../artifacts/scenes/mainplatform-sources-typical.png" /></p>
 <hr />
-<h4 id="what-are-groups">What are Groups?<a class="headerlink" href="#what-are-groups" title="Permanent link">&para;</a></h4>
+<h2 id="what-are-groups">What are Groups?<a class="headerlink" href="#what-are-groups" title="Permanent link">&para;</a></h2>
 <p>Below is an example of how the groupings of source elements are linked to elements on the broadcast
 <img alt="Example of typical sources in a main platform scene" src="../artifacts/scenes/mainplatform-sources-typical-elements.png" /></p>
 <p>Elements, or Groups of Elements can be hidden or un-hidden to create different layouts within the same Scene in this example
 <img alt="Example of typical sources in a main platform scene" src="../artifacts/scenes/mainplatform-sources-custom-elements.png" /></p>
 <hr />
-<h4 id="what-are-transforms">What are Transforms?<a class="headerlink" href="#what-are-transforms" title="Permanent link">&para;</a></h4>
+<h2 id="what-are-transforms">What are Transforms?<a class="headerlink" href="#what-are-transforms" title="Permanent link">&para;</a></h2>
 <p>In OBS, transforms are tools that let you adjust the position, size, rotation, and cropping of any source within a scene. Using transforms, you can move sources around the canvas, scale them up or down, rotate them to any angle, and crop out unwanted parts of a video or image. This is especially useful for fine-tuning the layout of your broadcast, ensuring that every element fits perfectly on screen. Transforms are accessed by right-clicking a source and selecting 'Transform' or by using the bounding box handles in the preview window.</p>
+<h3 id="positional-alignments">Positional Alignments<a class="headerlink" href="#positional-alignments" title="Permanent link">&para;</a></h3>
+<p>Positional Alignments are somewhat tricky to understand without a reference picture, however:</p>
+<ul>
+<li>They make the placement of an object <strong><em>exact</em></strong> when using Canvas resolution scaled numbers</li>
+<li>no need to rely on the precise mouse movements on a canvas, just simple maths</li>
+<li>Transforms can be copied from one source or group to another source, speeding up changes</li>
+</ul>
+<p><strong><em>When a Positional Alignment is changed:</em></strong></p>
+<ul>
+<li>it will <strong><em>appear</em></strong> that the object moves in a somewhat random location</li>
+<li>this is an illusion due to the default location as the starting point</li>
+<li>the point of reference (or <strong><em>anchor</em></strong>) is shown in the circle in the diagrams below</li>
+<li>Understanding Transforms is critical to repeatable Scene setup</li>
+</ul>
+<p>Below is the graphic representation of each Positional Alignment (With OBS' US spelling).</p>
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+</style>
+
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><div style="width:150px">Positional Alignment</div></th>
+<th style="text-align: center;">Illusionary Movement</th>
+<th style="text-align: center;">OBS Screenshot</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Top Left<br><br>This is the default or '<strong>reset</strong>' value, all other alignments have to be set</td>
+<td style="text-align: center;"><strong>Default Location</strong></td>
+<td style="text-align: center;"><img alt="" src="../artifacts/scenes/transforms/general-tl-default.png" /></td>
+</tr>
+<tr>
+<td style="text-align: left;">Top Center</td>
+<td style="text-align: center;"><strong>The object will appear to shift<br><br> to the <em>half-left</em>               <br><br>of the default location</strong></td>
+<td style="text-align: center;"><img alt="" src="../artifacts/scenes/transforms/general-tc.png" /></td>
+</tr>
+<tr>
+<td style="text-align: left;">Top Right</td>
+<td style="text-align: center;"><strong>The object will appear to shift<br><br> to the <em>left</em>                    <br><br>of the default location</strong></td>
+<td style="text-align: center;"><img alt="" src="../artifacts/scenes/transforms/general-tr.png" /></td>
+</tr>
+<tr>
+<td style="text-align: left;">Center Right</td>
+<td style="text-align: center;"><strong>The object will appear to shift<br><br> to the <em>left and half-up</em>        <br><br>of the default location</strong></td>
+<td style="text-align: center;"><img alt="" src="../artifacts/scenes/transforms/general-cr.png" /></td>
+</tr>
+<tr>
+<td style="text-align: left;">Bottom Right</td>
+<td style="text-align: center;"><strong>The object will appear to shift<br><br> to the <em>diagonal up and left</em>    <br><br>of the default location</strong></td>
+<td style="text-align: center;"><img alt="" src="../artifacts/scenes/transforms/general-br.png" /></td>
+</tr>
+<tr>
+<td style="text-align: left;">Bottom Center</td>
+<td style="text-align: center;"><strong>The object will appear to shift<br><br> to the <em>half-left and up</em>        <br><br>of the default location</strong></td>
+<td style="text-align: center;"><img alt="" src="../artifacts/scenes/transforms/general-bc.png" /></td>
+</tr>
+<tr>
+<td style="text-align: left;">Bottom Left</td>
+<td style="text-align: center;"><strong>The object will appear to shift<br><br> <em>up</em>                             <br><br>of the default location</strong></td>
+<td style="text-align: center;"><img alt="" src="../artifacts/scenes/transforms/general-bl.png" /></td>
+</tr>
+<tr>
+<td style="text-align: left;">Center Left</td>
+<td style="text-align: center;"><strong>The object will appear to shift<br><br> <em>half-up</em>                        <br><br>of the default location</strong></td>
+<td style="text-align: center;"><img alt="" src="../artifacts/scenes/transforms/general-cl.png" /></td>
+</tr>
+<tr>
+<td style="text-align: left;">Center</td>
+<td style="text-align: center;"><strong>The object will appear to shift<br><br> to the <em>half-left and half-up</em>   <br><br>of the default location</strong></td>
+<td style="text-align: center;"><img alt="" src="../artifacts/scenes/transforms/general-c.png" /></td>
+</tr>
+</tbody>
+</table>
 <hr />
-<h4 id="what-are-filters">What are Filters?<a class="headerlink" href="#what-are-filters" title="Permanent link">&para;</a></h4>
+<h2 id="what-are-filters">What are Filters?<a class="headerlink" href="#what-are-filters" title="Permanent link">&para;</a></h2>
 <p>In OBS, filters are effects or adjustments that you can apply to individual sources, groups, or audio/video feeds to enhance or modify their appearance and sound. Common video filters include color correction (to adjust brightness, contrast, and color balance), chroma key (for green screen effects), and crop/pad (to trim or expand the visible area). Audio filters can include noise suppression, gain, and compression to improve sound quality. Filters are essential for fine-tuning your stream's look and feel, ensuring that each source appears as intended and that audio is clear and balanced.</p>
 <hr />
-<h4 id="what-are-transitions">What are Transitions?<a class="headerlink" href="#what-are-transitions" title="Permanent link">&para;</a></h4>
+<h2 id="what-are-transitions">What are Transitions?<a class="headerlink" href="#what-are-transitions" title="Permanent link">&para;</a></h2>
 <p>In OBS, a transition is an animated effect that occurs when switching from one scene to another. Transitions help create a smooth and professional viewing experience by fading, sliding, or animating between different layouts or camera angles. You can choose from built-in transitions like Fade, Cut, and Swipe, or customize your own to match the style of your broadcast. Transitions are especially useful for live events, as they make scene changes less abrupt and more visually appealing.</p>
 <p>You can also use transitions on individual sources or groups within a scene. For example, swipe transitions can be applied to specific overlays, graphics, or stats panels, allowing elements to smoothly slide in or out of view without changing the entire scene. This technique is useful for dynamically showing or hiding information during a broadcast, such as bringing up competitor stats or sponsor logos only when needed.</p>
 <hr />
-<h2 id="import-an-existing-scene-collection">Import an Existing Scene Collection<a class="headerlink" href="#import-an-existing-scene-collection" title="Permanent link">&para;</a></h2>
+<h1 id="import-an-existing-scene-collection">Import an Existing Scene Collection<a class="headerlink" href="#import-an-existing-scene-collection" title="Permanent link">&para;</a></h1>
 <ul>
 <li>File → Scene Collection → Import</li>
 </ul>
@@ -869,7 +966,7 @@
 </li>
 </ul>
 <hr />
-<h2 id="create-a-new-scene-collection">Create a New Scene Collection<a class="headerlink" href="#create-a-new-scene-collection" title="Permanent link">&para;</a></h2>
+<h1 id="create-a-new-scene-collection">Create a New Scene Collection<a class="headerlink" href="#create-a-new-scene-collection" title="Permanent link">&para;</a></h1>
 <ul>
 <li>File → Scene Collection → New</li>
 <li>Enter a descriptive name (e.g., "FB_Competition_4K")</li>
