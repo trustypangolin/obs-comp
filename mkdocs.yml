@@ -1,0 +1,38 @@
+site_name: Fortitude Barbell Competition OBS Setup
+site_url: https://trustypangolin.github.io/obs-comp/
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.tracking
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - toc.integrate
+nav:
+  - Home: index.md
+  - Hardware: hardware.md
+  - Software: software.md
+  - 4K Youtube Streaming:
+      - Youtube: youtube-studio-setup.md
+      - OBS Profile: obs-profile-setup.md
+  - Scene Collection: obs-scene-collection.md
+  - Scene Config: 
+      - Starting Soon Scene: obs-scene-config-starting-soon.md
+      - Main Platform Scene: obs-scene-config-main-platform.md
+      - Slap Cam Scene: obs-scene-config-slapcam.md
+      - Commentator Scene: obs-scene-config-commentator.md
+      - Roaming Scene: obs-scene-config-roaming.md
+      - Crowd: obs-scene-config-crowd.md
+markdown_extensions:
+  - toc:
+      permalink: true
+      toc_depth: 3      
+  - attr_list
+  - md_in_html
+  - pymdownx.blocks.caption
+  - tables
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
