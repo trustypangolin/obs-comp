@@ -1,0 +1,1038 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://trustypangolin.github.io/obs-comp/obs-scene-collection/">
+      
+      
+        <link rel="prev" href="../obs-profile-setup/">
+      
+      
+        <link rel="next" href="../obs-scene-config-starting-soon/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>Scene Collection - Fortitude Barbell Competition OBS Setup</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.342714a4.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#what-is-an-obs-scene-collection" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Fortitude Barbell Competition OBS Setup" class="md-header__button md-logo" aria-label="Fortitude Barbell Competition OBS Setup" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Fortitude Barbell Competition OBS Setup
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Scene Collection
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../hardware/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Hardware
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../software/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Software
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../youtube-studio-setup/" class="md-tabs__link">
+          
+  
+  
+  4K Youtube Streaming
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Scene Collection
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../obs-scene-config-starting-soon/" class="md-tabs__link">
+          
+  
+  
+  Scene Config
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Fortitude Barbell Competition OBS Setup" class="md-nav__button md-logo" aria-label="Fortitude Barbell Competition OBS Setup" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Fortitude Barbell Competition OBS Setup
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hardware/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Hardware
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../software/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Software
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    4K Youtube Streaming
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            4K Youtube Streaming
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../youtube-studio-setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Youtube
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../obs-profile-setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    OBS Profile
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Scene Collection
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Scene Collection
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-scenes" class="md-nav__link">
+    <span class="md-ellipsis">
+      What are Scenes?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-sources" class="md-nav__link">
+    <span class="md-ellipsis">
+      What are Sources?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-groups" class="md-nav__link">
+    <span class="md-ellipsis">
+      What are Groups?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-transforms" class="md-nav__link">
+    <span class="md-ellipsis">
+      What are Transforms?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="What are Transforms?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#positional-alignments" class="md-nav__link">
+    <span class="md-ellipsis">
+      Positional Alignments
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-filters" class="md-nav__link">
+    <span class="md-ellipsis">
+      What are Filters?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-transitions" class="md-nav__link">
+    <span class="md-ellipsis">
+      What are Transitions?
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Scene Config
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Scene Config
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../obs-scene-config-starting-soon/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Starting Soon Scene
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../obs-scene-config-main-platform/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Main Platform Scene
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../obs-scene-config-slapcam/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Slap Cam Scene
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../obs-scene-config-commentator/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Commentator Scene
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../obs-scene-config-roaming/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Roaming Scene
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../obs-scene-config-crowd/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Crowd
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="what-is-an-obs-scene-collection">What is an OBS Scene Collection?<a class="headerlink" href="#what-is-an-obs-scene-collection" title="Permanent link">&para;</a></h1>
+<p>Scene Collections handle the various overlays, artifacts, and logos that appear on screen. They can be:</p>
+<ul>
+<li>Imported/exported between computers</li>
+<li>Created from scratch</li>
+</ul>
+<p>This guide covers both methods.</p>
+<h2 id="what-are-scenes">What are Scenes?<a class="headerlink" href="#what-are-scenes" title="Permanent link">&para;</a></h2>
+<p>In OBS, a "scene" is a collection of sources such as </p>
+<ul>
+<li>video feeds</li>
+<li>images</li>
+<li>overlays </li>
+<li>text</li>
+</ul>
+<p>These are arranged and layered to create a specific layout for your broadcast. </p>
+<p>Each scene can be switched live during a stream, allowing you to transition between different camera angles, graphics, or content setups seamlessly. </p>
+<p>Scenes are essential for organizing your stream's visual elements and making your production look professional.</p>
+<p>Below is an typical completed scene setup, showing all the scenes used for a typical competition stream:</p>
+<p><img alt="Example of all scenes used" src="../artifacts/scenes/scenes-complete.png" /></p>
+<hr style="border:2px solid black">
+
+<h2 id="what-are-sources">What are Sources?<a class="headerlink" href="#what-are-sources" title="Permanent link">&para;</a></h2>
+<p>In OBS, a "source" is any input that you add to a scene such as</p>
+<ul>
+<li>a video capture device</li>
+<li>images</li>
+<li>text</li>
+<li>browser window</li>
+<li>audio input</li>
+</ul>
+<p>Sources are the building blocks of each scene, and you can layer, resize, crop, and filter them to create your desired layout. Each scene can have multiple sources, and sources can be reused across different scenes for efficiency and consistency.</p>
+<p>Below is an example showing the typical sources used in the main competition platform scene:</p>
+<p><img alt="Example of typical sources in a main platform scene" src="../artifacts/scenes/mainplatform-sources-typical.png" /></p>
+<hr style="border:2px solid black">
+
+<h2 id="what-are-groups">What are Groups?<a class="headerlink" href="#what-are-groups" title="Permanent link">&para;</a></h2>
+<p>Below is an example of how the groupings of source elements are linked to elements on the broadcast
+<img alt="Example of typical sources in a main platform scene" src="../artifacts/scenes/mainplatform-sources-typical-elements.png" /></p>
+<p>Elements, or Groups of Elements can be hidden or un-hidden to create different layouts within the same Scene in this example
+<img alt="Example of typical sources in a main platform scene" src="../artifacts/scenes/mainplatform-sources-custom-elements.png" /></p>
+<hr style="border:2px solid black">
+
+<h2 id="what-are-transforms">What are Transforms?<a class="headerlink" href="#what-are-transforms" title="Permanent link">&para;</a></h2>
+<p>In OBS, transforms are tools that let you adjust the position, size, rotation, and cropping of any source within a scene. Using transforms, you can move sources around the canvas, scale them up or down, rotate them to any angle, and crop out unwanted parts of a video or image. This is especially useful for fine-tuning the layout of your broadcast, ensuring that every element fits perfectly on screen. Transforms are accessed by right-clicking a source and selecting 'Transform' or by using the bounding box handles in the preview window.</p>
+<h3 id="positional-alignments">Positional Alignments<a class="headerlink" href="#positional-alignments" title="Permanent link">&para;</a></h3>
+<p>Positional Alignments are somewhat tricky to understand without a reference picture, however:</p>
+<ul>
+<li>They make the placement of an object <strong><em>exact</em></strong> when using Canvas resolution scaled numbers</li>
+<li>no need to rely on the precise mouse movements on a canvas, just simple maths</li>
+<li>Transforms can be copied from one source or group to another source, speeding up changes</li>
+</ul>
+<p><strong><em>When a Positional Alignment is changed:</em></strong></p>
+<ul>
+<li>it will <strong><em>appear</em></strong> that the object moves in a somewhat random location</li>
+<li>this is an illusion due to the default location as the starting point</li>
+<li>the point of reference (or <strong><em>anchor</em></strong>) is shown in the circle in the diagrams below</li>
+<li>Understanding Transforms is critical to repeatable Scene setup</li>
+</ul>
+<p>Below is the graphic representation of each Positional Alignment (With OBS' US spelling).</p>
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+</style>
+
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><div style="width:150px">Positional Alignment</div></th>
+<th style="text-align: center;">Illusionary Movement</th>
+<th style="text-align: center;">OBS Screenshot</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Top Left<br><br>This is the default or '<strong>reset</strong>' value, all other alignments have to be set</td>
+<td style="text-align: center;"><strong>Default Location</strong></td>
+<td style="text-align: center;"><img alt="" src="../artifacts/scenes/transforms/general-tl-default.png" /></td>
+</tr>
+<tr>
+<td style="text-align: left;">Top Center</td>
+<td style="text-align: center;"><strong>The object will appear to shift<br><br> to the <em>half-left</em>               <br><br>of the default location</strong></td>
+<td style="text-align: center;"><img alt="" src="../artifacts/scenes/transforms/general-tc.png" /></td>
+</tr>
+<tr>
+<td style="text-align: left;">Top Right</td>
+<td style="text-align: center;"><strong>The object will appear to shift<br><br> to the <em>left</em>                    <br><br>of the default location</strong></td>
+<td style="text-align: center;"><img alt="" src="../artifacts/scenes/transforms/general-tr.png" /></td>
+</tr>
+<tr>
+<td style="text-align: left;">Center Right</td>
+<td style="text-align: center;"><strong>The object will appear to shift<br><br> to the <em>left and half-up</em>        <br><br>of the default location</strong></td>
+<td style="text-align: center;"><img alt="" src="../artifacts/scenes/transforms/general-cr.png" /></td>
+</tr>
+<tr>
+<td style="text-align: left;">Bottom Right</td>
+<td style="text-align: center;"><strong>The object will appear to shift<br><br> to the <em>diagonal up and left</em>    <br><br>of the default location</strong></td>
+<td style="text-align: center;"><img alt="" src="../artifacts/scenes/transforms/general-br.png" /></td>
+</tr>
+<tr>
+<td style="text-align: left;">Bottom Center</td>
+<td style="text-align: center;"><strong>The object will appear to shift<br><br> to the <em>half-left and up</em>        <br><br>of the default location</strong></td>
+<td style="text-align: center;"><img alt="" src="../artifacts/scenes/transforms/general-bc.png" /></td>
+</tr>
+<tr>
+<td style="text-align: left;">Bottom Left</td>
+<td style="text-align: center;"><strong>The object will appear to shift<br><br> <em>up</em>                             <br><br>of the default location</strong></td>
+<td style="text-align: center;"><img alt="" src="../artifacts/scenes/transforms/general-bl.png" /></td>
+</tr>
+<tr>
+<td style="text-align: left;">Center Left</td>
+<td style="text-align: center;"><strong>The object will appear to shift<br><br> <em>half-up</em>                        <br><br>of the default location</strong></td>
+<td style="text-align: center;"><img alt="" src="../artifacts/scenes/transforms/general-cl.png" /></td>
+</tr>
+<tr>
+<td style="text-align: left;">Center</td>
+<td style="text-align: center;"><strong>The object will appear to shift<br><br> to the <em>half-left and half-up</em>   <br><br>of the default location</strong></td>
+<td style="text-align: center;"><img alt="" src="../artifacts/scenes/transforms/general-c.png" /></td>
+</tr>
+</tbody>
+</table>
+<hr style="border:2px solid black">
+
+<h2 id="what-are-filters">What are Filters?<a class="headerlink" href="#what-are-filters" title="Permanent link">&para;</a></h2>
+<p>In OBS, filters are effects or adjustments that you can apply to individual sources, groups, or audio/video feeds to enhance or modify their appearance and sound. Common video filters include color correction (to adjust brightness, contrast, and color balance), chroma key (for green screen effects), and crop/pad (to trim or expand the visible area). Audio filters can include noise suppression, gain, and compression to improve sound quality. Filters are essential for fine-tuning your stream's look and feel, ensuring that each source appears as intended and that audio is clear and balanced.</p>
+<hr style="border:2px solid black">
+
+<h2 id="what-are-transitions">What are Transitions?<a class="headerlink" href="#what-are-transitions" title="Permanent link">&para;</a></h2>
+<p>In OBS, a transition is an animated effect that occurs when switching from one scene to another. Transitions help create a smooth and professional viewing experience by fading, sliding, or animating between different layouts or camera angles. You can choose from built-in transitions like Fade, Cut, and Swipe, or customize your own to match the style of your broadcast. Transitions are especially useful for live events, as they make scene changes less abrupt and more visually appealing.</p>
+<p>You can also use transitions on individual sources or groups within a scene. For example, swipe transitions can be applied to specific overlays, graphics, or stats panels, allowing elements to smoothly slide in or out of view without changing the entire scene. This technique is useful for dynamically showing or hiding information during a broadcast, such as bringing up competitor stats or sponsor logos only when needed.</p>
+<hr style="border:2px solid black">
+
+<h1 id="import-an-existing-scene-collection">Import an Existing Scene Collection<a class="headerlink" href="#import-an-existing-scene-collection" title="Permanent link">&para;</a></h1>
+<ul>
+<li>File → Scene Collection → Import</li>
+</ul>
+<p><img alt="Import Scene Collection" src="../artifacts/scenes/import-scene-collection.png" /></p>
+<ul>
+<li>
+<p>Select 'Add'
+<img alt="Import Scene Collection Add" src="../artifacts/scenes/import-scene-collection-add.png" /></p>
+</li>
+<li>
+<p>Locate the shared OneDrive Location
+<img alt="OneDrive Location" src="../artifacts/scenes/onedrive-scene-import.png" /></p>
+</li>
+</ul>
+<hr style="border:2px solid black">
+
+<h1 id="create-a-new-scene-collection">Create a New Scene Collection<a class="headerlink" href="#create-a-new-scene-collection" title="Permanent link">&para;</a></h1>
+<ul>
+<li>File → Scene Collection → New</li>
+<li>Enter a descriptive name (e.g., "FB_Competition_4K")</li>
+</ul>
+<p><img alt="New Scene Collection" src="../artifacts/scenes/new-scene-collection.png" /></p>
+<hr style="border:2px solid black">
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.sections", "navigation.expand", "navigation.path", "toc.integrate"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+    
+  </body>
+</html>
